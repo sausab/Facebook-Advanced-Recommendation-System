@@ -1,0 +1,14 @@
+Global setup:
+ Set up git
+  git config --global user.name "Saurabh"
+  git config --global user.email ssabnis3@gatech.edu
+      
+Next steps:
+  mkdir Facebook-Advanced-Recommendation-System
+  cd Facebook-Advanced-Recommendation-System
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:ssabnis3/Facebook-Advanced-Recommendation-System.git
+  git push -u origin master

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block books %}
+
+<li id="nav-code">
+	<a href="books" style="color:yellow;background:#092e20 url(https://www.djangoproject.com/m/img/site/nav_bg.gif) bottom repeat-x;text-decoration: none;">Books</a>
+</li>
+
+{% endblock %}
+
+{% block content %}
+
+{% if common_books %}
+
+	{% for book in common_books %}
+        	
+		<table cellpadding="10" border="0" height="150" id="interest" align="center">
+                	<tr height="70%" align="center">
+                        	<td align="center">
+                                	<img align="center" height="80" width="80" src="{{ book.picture }}"></img>
+                                </td>
+                        </tr>
+                        <tr height="30%" align="center">
+                        	<td align="center">
+                                        <a href="{{ book.link }}">{{ book.name }}</a>
+					<br>
+                                </td>
+                        </tr>
+                 </table>
+
+        {% endfor %}
+
+{% endif  %}
+
+{% endblock %}

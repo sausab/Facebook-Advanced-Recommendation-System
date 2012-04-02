@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block music %}
+
+<li id="nav-code">
+	<a href="music" style="color:yellow;background:#092e20 url(https://www.djangoproject.com/m/img/site/nav_bg.gif) bottom repeat-x;text-decoration: none;">Music</a>
+</li>
+
+{% endblock %}
+
+{% block content %}
+
+{% if common_music %}
+
+	{% for music in common_music %}
+        	
+		<table cellpadding="10" border="0" height="150" id="interest" align="center">
+                	<tr height="70%" align="center">
+                        	<td align="center">
+                                	<img align="center" height="80" width="80" src="{{ music.picture }}"></img>
+                                </td>
+                        </tr>
+                        <tr height="30%" align="center">
+                        	<td align="center">
+                                        <a href="{{ music.link }}">{{ music.name }}</a>
+					<br>
+                                </td>
+                        </tr>
+                 </table>
+
+        {% endfor %}
+
+{% endif  %}
+
+{% endblock %}

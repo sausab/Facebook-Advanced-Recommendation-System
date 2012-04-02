@@ -1,0 +1,125 @@
+#img {
+
+    position:absolute;    
+    width: 250px;  
+    height: 90px;  
+    top:10px;
+    right:1100px;
+}  
+  
+#header {  
+
+    position: relative;
+    background: #092e20;
+    height:112px; 
+}
+
+#footer {
+
+    background: #092e20;
+    height:35px;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+#footer a {
+
+    color:white;
+
+}  
+
+#footerText {
+
+    position:absolute;
+    top:7px;
+    right:400px;
+
+}
+
+  
+#billboard { 
+	
+    position:relative;  
+    height:90px;
+    background:#94da3a url(https://www.djangoproject.com/m/img/site/bbdsm_bg.gif) repeat-x;
+    border-bottom:6px solid #092e20;
+    border-top:6px solid #092e20;
+
+}  
+ 
+#interest {
+
+float:left;
+display:block;
+
+}
+ 
+#content {  
+      
+    position: relative;
+    height:490px;
+    background:#234f32;
+
+}
+
+#result {
+
+position:absolute;
+top:0px;
+right:405px;
+height:490px;
+width:940px;
+background:white;
+clear:both;
+text-align:center;
+
+}
+
+#nav-global {
+    position:absolute;
+    margin:0;
+    bottom:0;
+    right:0;
+    white-space:nowrap;
+}
+#nav-global li {
+    display:block;
+    float:left;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#nav-global a {
+    display:block;
+    float:left;
+    padding:5em 16px 10px 16px;
+    color:yellow;
+    text-decoration: none;
+    font-family:"Trebuchet MS",sans-serif;
+}
+#nav-global a:hover {
+    color:white;
+    background:#234f32;
+}
+
+#nav-code a {
+    color:yellow;
+    background:#092e20 url(https://www.djangoproject.com/m/img/site/nav_bg.gif) bottom repeat-x;
+    font-family:"Trebuchet MS",sans-serif;
+    text-decoration: none;
+}
+
+
+#score {
+
+position: absolute;
+top:0px;
+right:5px;
+background: #cdcdcd;
+width : 395px;
+height : 490px;
+background:#487858;
+
+}
+

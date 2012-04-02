@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %} Common Interests {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/mymedia/css/my_style.css" />
+</head>
+      
+  
+	<div id="header">
+
+		<img id="img" src="/mymedia/images/logo.png" alt="FARS" />
+
+		<ul id="nav-global">
+
+                	{% block books %} <li>
+                                <a href="books">Books</a>
+                        </li> {% endblock %}
+                        {% block music %} <li>
+                        	<a href="music">Music</a>
+                        </li> {% endblock %}
+                        <li> {% block movies %}
+	                        <a href="movies">Movies</a>
+                        </li> {% endblock %}
+                        <li>
+                                <a href="">Likes</a>
+                        </li>
+                        <li>
+                                <a href="">Activities</a>
+                        </li>
+			<li> {% block television %}
+                                <a href="television">Television</a>
+                        </li> {% endblock %}
+                        <li> {% block groups %}
+                                <a href="groups">Groups</a>
+                        </li> {% endblock %}
+                                <li>
+                                        <a href="">Games</a>
+				 </li>	
+                                <li>
+                                        <a href="">Events</a>
+                                </li>
+                                <li>
+                                        <a href="">Checkins</a>
+                                </li>
+                                <li>
+                                        <a href="">Interests</a>
+                                </li>
+
+
+
+                </ul>
+
+        </div>
+  
+	<div id="content">  
+
+		<div id="result">
+			
+	                {% block content %}{% endblock %}
+
+		</div>
+
+		<div id="score">
+		
+	        </div>
+
+	</div>  
+
+	<div id="footer">
+		<div id="footerText">
+			For <a href="http://www.cc.gatech.edu/~lingliu/courses/cs6675/12Spring/cs6675.html">CS 6675</a> : Advanced Internet Computing @  <a href="http://www.gatech.edu">Goergia Institute of Technology</a>
+		</div>
+	</div>
+
+</html>
